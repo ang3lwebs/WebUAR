@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAR Components</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="java.js"></script>
+</head>
+<body>
+    
+    <div class="containerUpper"></div>
+        <section class="containerText" style="float: left;">
+            
+            <h1>Nombre de los componentes UAR:</h1>
+            <input type="button"  id="button1" class="buttonsDescription" value="1. Identificador UAR" onclick="enterDescription(1)">
+            <input type="button"  id="button2" class="buttonsDescription" value="2. Descripción breve de los aspectos de usabilidad" onclick="enterDescription(2)">
+            <input type="button"  id="button3" class="buttonsDescription" value="3. Evidencias de un aspecto" onclick="enterDescription(3)">
+            <input type="button"  id="button4" class="buttonsDescription" value="4. Explicación de un aspecto" onclick="enterDescription(4)">
+            <input type="button"  id="button5" class="buttonsDescription" value="5. Gravedad del problema" onclick="enterDescription(5)">
+            <input type="button"  id="button6" class="buttonsDescription" value="6. Posibles soluciones y los costos potenciales" onclick="enterDescription(6)">
+            <input type="button"  id="button7" class="buttonsDescription" value="7. Relación con otros aspectos de la usabilidad" onclick="enterDescription(7)">
+            
+        </section>
+
+        <section class="containerDescription" style="float: right;">
+
+            <h1>Descripción del componente UAR:</h1>
+            
+            <div class="containerTxtDescription">
+
+                <p id="txt-Description"></p>
+
+            </div>
+
+        </section>
+
+    <div class="containerFunctions" style="float: left;" id="containerString">
+        
+        <div class="FunctionsInputs" style="float: left;">
+            <input type="text" required="" id="inputString" maxlength="15" autocomplete="off" onkeyup="buscadorTexto()">
+            <label>TEXTO A BUSCAR</label>
+        </div>
+        <button class="boton" style="float: left;">
+            ?
+            <div class="texto">Debera ingresar aquí el texto que desee buscar dentro de la descripción, 
+                la busqueda se realizara en tiempo real conforme se vaya ingresando el texto.
+            </div>
+        </button>
+        <div>
+            <p id="resultadoBusqueda"></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
