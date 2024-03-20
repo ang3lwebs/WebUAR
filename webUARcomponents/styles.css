@@ -1,0 +1,183 @@
+body{
+    background-color: #212529;
+    color: #fff;
+}
+
+.containerText{
+    font-family: 'Arial Narrow';
+    margin-left: 30px;
+}
+
+.containerText h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.buttonsDescription {
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #e9ecef;
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+}
+
+
+.buttonsDescription:hover{
+    color: #6edff6;
+    background-color: #032830;
+    border-color: #087990;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.buttonsDescriptionSelection{
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6edff6;
+    background-color: #032830;
+    border-color: #087990;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    cursor: default;
+    opacity: 0.5;
+}
+
+.containerDescription{
+    font-family: 'Arial Narrow';
+    margin-right: 20px;
+}
+
+.containerTxtDescription{
+    width: 850px;
+    background-color: #000000; 
+    border-top: 2px solid black; 
+    border-left: 2px solid black; 
+    border-right: 2px solid #D9D9D9 ;
+    border-bottom: 2px solid #7A7A7A;
+    max-height: 500px;
+    border-radius: 20px; 
+}
+
+.containerDescription h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.containerDescription p{
+    font-size: 25px;
+    padding: 22px;
+    text-align: justify;
+}
+
+/*Input String*/
+.containerFunctions{
+    margin-left: 382px;
+    margin-top: 40px;
+    display: none;
+}
+
+.containerFunctions .FunctionsInputs {
+    position: relative;
+}
+  
+.containerFunctions .FunctionsInputs input {
+    width: 100%;
+    padding: 10px 1%;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.containerFunctions .FunctionsInputs label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    margin-left: 45px;
+}
+
+.containerFunctions .FunctionsInputs input:focus ~ label,  
+.containerFunctions .FunctionsInputs input:valid ~ label,
+.containerFunctions .FunctionsInputs input:hover ~ label {
+    top: -30px;
+    left: 0;
+    color: #6edff6;
+    font-size: 18px;
+    margin-left: 53px;
+}
+
+
+.boton {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    float: right;
+    margin-left: -20px;
+    margin-top: 12px;
+}
+
+.texto {
+    visibility: hidden;
+    width: 250px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%; 
+    margin-left: -60px; 
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+    border: 3px solid gray;
+    transform: translate(56px, 17.5px);
+}
+
+.boton:hover .texto{
+    visibility: visible;
+    opacity: 1;
+}
+
+#resultadoBusqueda{
+    text-align: center;
+    margin-left: -200px;
+    width: 700px;
+    margin-top: 80px;
+    font-size: 1.8em;
+    margin-right: -220px;
+}
